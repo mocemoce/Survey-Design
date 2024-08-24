@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="top-title">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a Certification requirement for "FreeCodeCamp" </p>
+     </div>
+
+    <form id="survey-form">
+
+        <div class="requirement" id="requirement">
+            <label id="name-label">Name</label><input required id="name" type="text" placeholder="Enter your Name:"/></labe> <br>
+
+            <label id="email-label">Email</label><input required id="email" type="email" placeholder="Enter your Email:"/></label> <br>
+
+            <label id="number-label">Age</label><input id="number" type="number" min="18" max="60" placeholder="18" size="50" ></label> <br>
+        </div>
+        <label>Which option best describes your current role?</label> <br>
+        <select id="dropdown">
+            <option>Collage Grad</option>
+            <option>Undergrad</option>
+            <option>others</option>
+        </select> 
+        <br>
+        <label>Do you think this Survey Form looks Good?</label>
+        <div id="user-choices">
+            <label>
+            <input type="radio" value="yes" name="choices">
+            Yes</label>
+            <label>
+            <input type="radio" value="no" name="choices">
+            No</label>
+            <label>
+            <input type="radio" value="n/a" name="choices">
+            N/A</label>
+        </div>
+        <br>
+        <div id="check-box">
+            <label>Whats your experties:</label><br>
+            <input id="Frontend" value="Frontend" type="checkbox"/>
+            <label for="Frontend">Frontend Dev</label><br>
+
+            <input id="Backend" value="Backend" type="checkbox"/>
+            <label for="Backend">Backend Dev</label><br>
+
+            <input id="Fullstack" value="Fullstack" type="checkbox"/>
+            <label for="Fullstack">Fullstack Dev</label><br>
+
+            <input id="AI Learning" value="AI Learning" type="checkbox"/>
+            <label for="AI Learning">AI Learning</label><br>
+
+            <input id="Machine Learning" value="Machine Learning" type="checkbox"/>
+            <label for="Machine Learning">Machine Learning</label><br>
+        </div><br>
+        
+        <label>Any Comment or Suggestions?</label><br>
+        <textarea placeholder="Enter your description here."></textarea><br>
+
+        <button id="submit" class="button-7" role="button">Submit</button>
+        
+    </div>
+    </form>
+</body>
+</html>
